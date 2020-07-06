@@ -3,14 +3,14 @@ import optparse
 
 def get_options():
     parser=optparse.OptionParser()
-    parser.add_option("-i",dest="interface",help="used to select interface")
-    parser.add_option("-m",dest="new_mac",help="used to change mac_address")
+    parser.add_option("-i","--interface",dest="interface",help="used to select interface")
+    parser.add_option("-m","--mac_address",dest="new_mac",help="used to change mac_address")
     (options,arguments)=parser.parse_args()
 
     if not options.interface :
-        print(".........please enter select your interface.........")           #CODE BY SURIYA
+        print(".........Please Select Your Interface.........")           #CODE BY SURIYA
     elif not options.new_mac:
-        print("...............Please select your mac_id..............")
+        print("...............Please Select Your Mac_id..............")
     else:
         return options
 
