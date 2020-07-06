@@ -8,9 +8,9 @@ def get_options():
     (options,arguments)=parser.parse_args()
 
     if not options.interface :
-        print(".........Please Select Your Interface.........")           #CODE BY SURIYA
+        print(".....Please Select Your Interface.........")           #CODE BY SURIYA
     elif not options.new_mac:
-        print("...............Please Select Your Mac_id..............")
+        print(".........Please Select Your Mac_id.........")
     else:
         return options
 
